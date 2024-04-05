@@ -1,0 +1,37 @@
+.home {
+    height: 85vh;
+    margin: auto;
+    background-image: url('../assets/front_img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+.home>h1 {
+    background-color: transparent;
+    color: black;
+    font-size: 2.5rem;
+    /* Adjust font size as needed */
+}
+
+.home>button {
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(255, 128, 0);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 1rem 1rem 0 0;
+    transition: all 0.3s ease-in;
+}
+
+.home>button:hover {
+    background-color: rgb(200, 95, 57)
+}

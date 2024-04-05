@@ -1,0 +1,49 @@
+.navbar {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.logo {
+    flex: 4;
+    color: rgb(255, 128, 0);
+    font-size: 2rem;
+    font-weight: boder;
+    margin: auto;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.items>li {
+    cursor: pointer;
+}
+
+.items>button {
+    border: none;
+    font-size: 1rem;
+    padding: 0.3rem;
+    background-color: rgb(255, 128, 0);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.items>li:hover {
+    color: rgb(255, 128, 0);
+}
+
+.items>button:hover {
+    background-color: rgb(200, 95, 57);
+}
