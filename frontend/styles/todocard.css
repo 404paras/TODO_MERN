@@ -1,0 +1,79 @@
+.container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    height: 25vh;
+    margin: 1rem;
+    padding: 1rem;
+    word-wrap: break-word;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    width: 25vh;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.data {
+    height: calc(100% - 2rem);
+    overflow-y: auto;
+}
+
+.data>.heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.control-btns {
+    position: absolute;
+    bottom: 0;
+    width: calc(95% - 2rem);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+.update>svg {
+    color: green;
+}
+
+.delete>svg {
+    font-size: 1.3rem;
+    color: red;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: rgb(239, 176, 176);
+}
+
+.update {
+    cursor: pointer;
+    color: blue;
+    position: relative;
+}
+
+.update:hover::after {
+    content: "Update";
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(23, 239, 48, 0.8);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.delete:hover::after {
+    content: "Delete";
+    position: absolute;
+    top: -2rem;
+    transform: translateX(-50%);
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}

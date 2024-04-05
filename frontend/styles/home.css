@@ -1,5 +1,5 @@
 .home {
-    height: 85vh;
+    height: 83vh;
     margin: auto;
     background-image: url('../assets/front_img.jpg');
     background-position: center;
@@ -19,7 +19,7 @@
     /* Adjust font size as needed */
 }
 
-.home>button {
+.home button {
     border: none;
     font-size: 1.5rem;
     padding: 1rem;
@@ -32,6 +32,11 @@
     transition: all 0.3s ease-in;
 }
 
-.home>button:hover {
+.home a {
+    text-decoration: none;
+    background: none;
+}
+
+.home button:hover {
     background-color: rgb(200, 95, 57)
 }

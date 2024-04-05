@@ -1,0 +1,64 @@
+.todo {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.title>input,
+.title>textarea {
+    width: 90%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+}
+
+#input {
+    display: none;
+}
+
+.btn-add,
+.btn-create {
+    border: none;
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    background-color: rgb(255, 128, 0);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0.5rem 1rem 0 0;
+    transition: all 0.3s ease-in;
+}
+
+.add>button:hover {
+    background-color: rgb(200, 95, 57)
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1rem;
+}

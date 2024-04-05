@@ -1,6 +1,7 @@
 import '../styles/navbar.css';
 import { FaBook } from "react-icons/fa";
 import { FaRegCircleUser } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -9,8 +10,8 @@ const Navbar = () => {
       <div style={{flex:4}}></div>
       <div style={{flex:4}}>
         <ul className="items">
-          <li>Home</li>
-          <li>About Us</li>
+         <Link to='/'> <li>Home</li></Link>
+         <Link to='/todo'> <li>Todo</li></Link>
           <button>SignIn</button>
           <button>SignUp</button>
           <button>Logout</button>
